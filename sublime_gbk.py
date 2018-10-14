@@ -54,9 +54,10 @@ class EventListener(sublime_plugin.EventListener):
             file_name = view.file_name()[:-5]
             saveWithEncoding(view, file_name)
 
-    def on_close(self,view):
-        if ".dump" in view.file_name():
-            os.remove(view.file_name())
+     def on_close(self,view):
+        if view.file_name() != None:
+            if ".dump" in view.file_name():
+                os.remove(view.file_name())
 
 
 class SaveWithGbkCommand(sublime_plugin.TextCommand):
