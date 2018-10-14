@@ -1,3 +1,5 @@
+### 这是一个分支，原作者几年没有更新了。修正一个小bug……
+
 ### With this plugin you can:
 
 1. Open a GBK File
